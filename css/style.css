@@ -444,7 +444,103 @@ img{
     background: #e68a00;
 }
 
+.see-more-wrap {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
 
+.see-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    background: orange;
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 12px 12px 28px;
+    border-radius: 40px;
+
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.see-more-btn span {
+    width: 42px;
+    height: 42px;
+    background: white;
+    color: orange;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+}
+
+.see-more-btn:hover {
+    background: #e68a00;
+    transform: translateY(-4px);
+}
+/*  complete popular section */
+
+
+
+/* choose section */
+.why-section {
+    padding: 90px 0;
+}
+
+.why-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.why-card {
+    width: 33.33%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 45px 30px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 35px rgba(0, 0, 0, 0.08);
+}
+
+.why-icon {
+    width: 70px;
+    height: 70px;
+    background: #f5dfbd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px;
+}
+
+.why-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+.why-card h3 {
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+
+.why-card p {
+    color: #777;
+    line-height: 1.6;
+}
 
 
 
@@ -530,8 +626,36 @@ img{
     .section-heading h2 {
         font-size: 34px;
     }
+.popular-cards {
+        justify-content: center;
+        gap: 20px;
+    }
 
+    .popular-card {
+        width: 45%;
+    }
+
+    .popular-card img {
+        width: 100%;
+    }
+    /* choose sec */
+    .why-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .why-card {
+        width: 100%;
+    }
+
+    .why-card:last-child {
+        grid-column: 1 / 3;
+        justify-self: center;
+        max-width: 350px;
+    }
 }
+
 
 
 
@@ -594,6 +718,47 @@ img{
     .section-heading h2 {
         font-size: 28px;
     }
+    .popular-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .popular-card {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .popular-card img {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .see-more-btn {
+        font-size: 14px;
+    }
+    /* choose sec */
+     .why-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .why-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .why-card {
+        max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
     }
 
 
@@ -653,5 +818,35 @@ img{
 
     .section-heading h2 {
         font-size: 24px;
+    }
+    .popular-card {
+        width: 100%;
+    }
+
+    .section-heading h2 {
+        font-size: 24px;
+    }
+
+    .see-more-btn {
+        padding: 10px 10px 10px 20px;
+    }
+
+    .see-more-btn span {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* choose sec */
+    .why-card {
+        max-width: 280px;
+        padding: 35px 20px;
+    }
+
+    .why-card h3 {
+        font-size: 22px;
+    }
+
+    .why-card p {
+        font-size: 14px;
     }
 }
