@@ -643,7 +643,7 @@ img{
       width: 100%;
     }
     /* popular section */
-      .popular-card {
+    .popular-card {
         max-width: 280px;
     }
 
@@ -654,5 +654,4 @@ img{
     .section-heading h2 {
         font-size: 24px;
     }
-
 }
